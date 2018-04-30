@@ -64,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewDataNascimento"
-        android:inputType="numberSigned|date" />
+        android:inputType="date" />
 
     <TextView
         android:id="@+id/textViewCpf"
@@ -78,7 +78,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewCpf"
-        android:inputType="numberSigned" />
+        android:inputType="number" />
 
 <!--
     <TextView
@@ -191,7 +191,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewTelefone"
-        android:inputType="numberSigned|phone" />
+        android:inputType="number" />
 
     <TextView
         android:id="@+id/textViewEmail"
