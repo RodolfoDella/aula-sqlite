@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_nome" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNome"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/textViewSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNome"
+        android:text="@string/texto_sexo" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSexo"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/cadastro_pessoa_botton_margin">
+        <RadioButton
+            android:id="@+id/radioMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:text="@string/radio_sexo_masculino" />
+
+        <RadioButton
+            android:id="@+id/radioFeminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:text="@string/radio_sexo_feminino" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewDataNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupSexo"
+        android:text="@string/texto_data_nascimento" />
+
+    <EditText
+        android:id="@+id/editTextDataNascimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDataNascimento"
+        android:inputType="numberSigned|date" />
+
+    <TextView
+        android:id="@+id/textViewCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDataNascimento"
+        android:text="@string/texto_cpf" />
+
+    <EditText
+        android:id="@+id/editTextCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCpf"
+        android:inputType="numberSigned" />
+
+<!--
+    <TextView
+        android:id="@+id/textViewRg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextCpf"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/textViewRuaNumero"
+        android:text="@string/texto_rg" />
+
+    <EditText
+        android:id="@+id/editTextRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextCpf"
+        android:layout_alignBottom="@+id/editTextCpf"
+        android:layout_alignStart="@+id/textViewRg"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/textViewRua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextRg"
+        android:text="@string/texto_rua" />
+
+    <EditText
+        android:id="@+id/editTextRua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRua"
+        android:layout_toLeftOf="@id/editTextRuaNumero"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textViewRuaNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/editTextRg"
+        android:layout_toEndOf="@+id/editTextRua"
+        android:ems="5"
+        android:text="@string/texto_rua_numero" />
+
+    <EditText
+        android:id="@+id/editTextRuaNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewRua"
+        android:ems="5"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewBairro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextRua"
+        android:text="@string/texto_bairro" />
+
+    <EditText
+        android:id="@+id/editTextBairro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewBairro"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textViewUf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextBairro"
+        android:text="@string/texto_uf" />
+
+    <Spinner
+        android:id="@+id/spinnerUf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUf"
+        android:layout_toLeftOf="@id/spinnerCidade" />
+
+    <TextView
+        android:id="@+id/textViewCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextBairro"
+        android:layout_toEndOf="@+id/textViewDataNascimento"
+        android:text="@string/texto_cidade" />
+
+    <Spinner
+        android:id="@+id/spinnerCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewCidade"
+        android:layout_below="@+id/textViewCidade"
+        android:inputType="text" />
+-->
+
+    <TextView
+        android:id="@+id/textViewTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCpf"
+        android:text="@string/texto_telefone" />
+
+    <EditText
+        android:id="@+id/editTextTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTelefone"
+        android:inputType="numberSigned|phone" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTelefone"
+        android:text="@string/texto_email" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEmail"
+        android:inputType="textEmailAddress" />
+
+    <LinearLayout
+        android:id="@+id/listButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail">
+
+        <Button
+            android:id="@+id/buttonSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/botao_salvar"
+            android:textColor="@color/colorBotaoSalvar"/>
+
+        <Button
+            android:id="@+id/buttonExcluir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/botao_excluir"
+            android:textColor="@color/colorBotaoExcluir"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

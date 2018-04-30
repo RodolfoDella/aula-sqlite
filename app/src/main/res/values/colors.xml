@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#34344A</color>
+    <color name="colorPrimaryDark">#333E49</color>
+    <color name="colorAccent">#52F2D4</color>
+
+    <color name="colorBotaoExcluir">#FF5744</color>
+    <color name="colorBotaoSalvar">#2F52E0</color>
+</resources>

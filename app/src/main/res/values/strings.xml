@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">SQLite</string>
+
+    <string name="acao_pesquisar">Pesquisar</string>
+    <string name="acao_novo">Novo</string>
+    <string name="acao_info">Info</string>
+
+    <string name="texto_nome">Nome</string>
+    <string name="texto_sexo">Sexo</string>
+    <string name="texto_data_nascimento">Data de Nascimento</string>
+    <string name="texto_cpf">CPF</string>
+    <string name="texto_rg">RG</string>
+    <string name="texto_rua">Rua</string>
+    <string name="texto_rua_numero">Número</string>
+    <string name="texto_bairro">Bairro</string>
+    <string name="texto_cidade">Cidade</string>
+    <string name="texto_uf">Estado</string>
+    <string name="texto_telefone">Telefone</string>
+    <string name="texto_email">E-Mail</string>
+
+    <string name="radio_sexo_masculino">Masculino</string>
+    <string name="radio_sexo_feminino">Feminino</string>
+
+    <string name="button_novo">Novo</string>
+
+    <string name="acao_delete">Excluir</string>
+    <plurals name="numero_selecionados">
+        <item quantity="one">1 selecionado</item>
+        <item quantity="other">%d selecionados</item>
+    </plurals>
+
+    <string name="mensagem_excluir">%d itens excluídos.</string>
+    <string name="desfazer">Desfazer</string>
+
+    <string name="acao_compartilhar">Compartilhar</string>
+    <string name="texto_compartilhar">Me hospedei no %1$s e o classifiquei em %2$.1f estrelas</string>
+
+    <string name="acao_editar">Editar</string>
+    <string name="title_activity_pessoa_new">Novo Cadastro</string>
+    <string name="botao_salvar">Salvar</string>
+    <string name="botao_excluir">Excluir</string>
+</resources>
